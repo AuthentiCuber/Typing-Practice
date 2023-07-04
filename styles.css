@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+/* *===============
+   * Global styles
+   *=============== */
+
+:root {
+   --text: #112244;
+   --background: #dcdcdc;
+   --primary-button: #1b3c7e;
+   --secondary-button: #303e5a;
+   --accent: #1b3c7e;
+}
+
+* {
+   box-sizing: border-box;
+   background-color: var(--background);
+   font-family: JetBrains Mono, monospace;
+   transition: color, 0.25s;
+   border-radius: 5px;
+   text-align: center;
+   font-variant-ligatures: none;
+}
+
+html,
+body {
+   font-size: 1.5rem;
+   color: var(--text);
+}
+
+.flex-centred {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+/* * Font Awesome */
+
+i.fa-regular,
+i.fa-solid {
+   background: transparent;
+   font-size: 1rem;
+}
+
+/* *===============
+   * Typography
+   *=============== */
+
+h1 {
+   font-weight: 900;
+   margin: 20px;
+   border-bottom: 4px solid var(--accent);
+   border-radius: 0;
+   padding-bottom: 5px;
+}
+
+/* *===============
+   * All inputs
+   *=============== */
+
+input {
+   font-size: 1rem;
+   padding: 5px;
+   border: none;
+   background-color: var(--primary-button);
+   color: var(--background);
+}
+
+input:focus {
+   outline: transparent;
+}
+
+/* *===============
+   * Mode selectors
+   *=============== */
+
+.mode-selector {
+   height: 50px;
+   aspect-ratio: 1;
+}
+
+input[type="button"]:hover {
+   transform: translate(0px, -5px);
+   cursor: pointer;
+}
+
+.selected-button {
+   background: var(--secondary-button);
+}
+
+#mode-buttons {
+   margin: 10px;
+}
+
+/* *===============
+   * Words to type
+   *=============== */
+
+#words-to-type-container {
+   user-select: none;
+   font-size: 1.5rem;
+   color: var(--background);
+   background: var(--secondary-button);
+   margin: 10px;
+   padding: 10px;
+   height: 5.25rem;
+   overflow: hidden;
+   text-align: left;
+}
+
+.word {
+   width: fit-content;
+   float: left;
+   padding: 2px;
+   margin: 0 5px 5px 0;
+   background: transparent;
+}
+
+.word.current-word {
+   background: var(--background);
+   color: var(--text);
+}
+
+.word.incorrect {
+   background: #b53c3c;
+   color: var(--background);
+}
+
+/* *===============
+   * Typing box
+   *=============== */
+
+#typing-box {
+   font-size: 1.5rem;
+   color: var(--text);
+   border: 4px solid var(--accent);
+   background: transparent;
+   text-align: left;
+   padding: 10px;
+   width: 250px;
+   height: 3rem;
+   margin: 10px;
+   outline: transparent;
+}
+
+/* *===============
+   *     Stats
+   *=============== */
+
+.stats {
+   height: 50px;
+   font-size: 1rem;
+   margin: 0;
+}
+
+.stat {
+   color: var(--background);
+   background: var(--accent);
+   height: 100%;
+   margin-inline: 5px;
+   justify-content: space-evenly;
+   font-weight: 500;
+}
+
+#wpm-wrapper {
+   aspect-ratio: 3 / 1;
+}
+
+#timer-wrapper {
+   float: left;
+   aspect-ratio: 2 / 1;
+}
+
+#timer,
+#wpm {
+   background: transparent;
+}
