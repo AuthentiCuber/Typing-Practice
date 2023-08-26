@@ -1,4 +1,5 @@
 node_modules/
 
-# css sourcemaps
+# css source and sourcemap
+src/
 *.css.map
