@@ -1,0 +1,19 @@
+{
+  "name": "typing",
+  "version": "1.0.0",
+  "description": "For practicing my typing",
+  "main": "scripts.js",
+  "scripts": {
+    "postcss:watch": "postcss src/styles.css -o dist/styles.css -m -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.15",
+    "cssnano": "^6.0.1",
+    "postcss": "^8.4.28",
+    "postcss-cli": "^10.1.0",
+    "postcss-nesting": "^12.0.1"
+  }
+}
